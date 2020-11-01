@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>主页</title>
+  <meta charset="utf-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+  body {
+    margin: 4;
+    font-family: Verdana,Sans-serif;
+	width: 250px;
+  }
+  #first {
+    text-align:center;
+    font-family: Times,Sans-serif;
+    background-color: #AAAABB;
+	height:40px;
+  } 
+  #second {
+    text-align:center;
+	height:50px;
+  }
+  #addThisPagetoWhiteList {
+	height:30px;
+	position:relative;
+	top:-20px;
+	text-align:left;
+	font-family: Times;
+	font-size:15px;
+  }
+  #removeThisPagefromWhiteList {
+	height:30px;
+	position:relative;
+	top:-20px;
+	text-align:left;
+	font-family: Times;
+	font-size:15px;
+	display:none;
+  }
+  
+  #stopExtension {
+	height:30px;
+	position:relative;
+	top:-15px;
+	text-align:left;
+	font-family: Times;
+	font-size:15px;
+  }
+  #startExtension {
+	height:30px;
+	position:relative;
+	top:-15px;
+	text-align:left;
+	font-family: Times;
+	font-size:15px;
+	display:none;
+  }
+  
+  #option {
+    position:relative;
+	top:8px;
+    	
+  }
+  #seting {
+    position:relative;
+	left:80px;
+  }
+  #title {
+    font-family: Times;
+	font-size:20px;
+	position:relative;
+	top:5px;
+  }
+  #blockMessage {
+    position:relative;
+	top:-10px;
+	font-size:20px;
+	color:green;	
+  }
+  #pageinWhiteList {
+    position:relative;
+	top:-10px;
+	font-size:20px;
+	color:green;
+	display:none;
+  }
+  #notUseExtension {
+    position:relative;
+	top:-10px;
+	font-size:20px;
+	color:red;
+	display:none;
+  }
+  hr {
+    position:relative;
+	top:-25px;
+  }
+  h2{
+    position:relative;
+	top:8px;
+  }
+  </style>
+  </head>
+  <body>
+  <div>
+  <img src="src/icon.png" align =center height = 40px width = 50px ></img>
+  <span id="title">MyBlock</span>
+  <span  id="seting"><img  id="option" src="src/option.jpg" height = 20px width = 20px  ></img></span>
+  </div>
+  <div id="first">
+  <h2>广告拦截</h2>
+  </div>
+  
+  <div id="second">
+    <p id = "blockMessage" >
+	已拦截
+      <a id="AdCount">0</a>
+    条广告
+    </p>
+	<p id="pageinWhiteList" >此网页为白名单网页</p>
+	<p id="notUseExtension" >插件已暂停使用</p>
+  </div>
+  <hr></hr>
+  <div id ="addThisPagetoWhiteList" >
+  将此网页加入白名单
+  </div>
+  <div id ="removeThisPagefromWhiteList" >
+  将此网页移出白名单
+  </div>
+  <div id ="stopExtension" >
+  停止此插件
+  </div>
+  <div id ="startExtension" >
+  启用插件
+  </div>
+  <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="js/manage.js"></script>
+  <script type="text/javascript" src="js/popup.js"></script>
+  </body>
+</html>
